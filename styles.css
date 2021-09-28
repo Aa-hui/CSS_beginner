@@ -1,0 +1,21 @@
+h1,li {
+    color: red;
+  }
+/* 用，将不同的选择器隔开，可以使用多种选择器 */
+
+p {
+    color: green;
+}
+
+li {
+    /* list-style-type: none; */
+    list-style-type: square;
+  }
+/* 修改无序表自带的项目符号 */
+
+
+
+
+
+
+
