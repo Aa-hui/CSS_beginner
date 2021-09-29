@@ -7,15 +7,23 @@ p {
     color: green;
 }
 
+.special{
+    color:darkblue;
+    font-weight: bold;
+}
+
+/* 修改无序表自带的项目符号 */
 li {
     /* list-style-type: none; */
     list-style-type: square;
   }
-/* 修改无序表自带的项目符号 */
 
+ul em{
+    color: darkorange;
+}
 
-
-
-
+ul span{
+    color: rgb(20, 43, 255);
+}
 
 

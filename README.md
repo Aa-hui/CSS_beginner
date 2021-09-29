@@ -16,6 +16,27 @@
 
 为了把 `styles.css` 和 `index.html` 连接起来，可以在 HTML 文档中，`<head>`语句模块里面加上下面的代码：
 
-```
+```html
 <link rel="stylesheet" href="styles.css">
 ```
+
+#### 使用类名
+
+给HTML元素添加类名，如`<li class="special">`，在CSS中，要对这个类进行设计，代码格式如下：
+
+```css
+.special {
+  color: orange;
+  font-weight: bold;
+}
+```
+
+#### 根据元素在文档中的位置确定样式
+
+```css
+li em {
+  color: rebeccapurple;
+}
+```
+
+如上代码，表示选择器将选择`<li>`内部的任何`<em>`元素（`<li>`的后代）

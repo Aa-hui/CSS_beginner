@@ -11,15 +11,18 @@
     <h1>我是一级标题</h1>
 
     <p>这是一个段落文本. 在文本中有一个 <span>span element</span>
-并且还有一个 <a href="http://example.com">链接</a>.</p>
+    并且还有一个 <a href="http://example.com">链接</a>.</p>
 
     <p>这是第二段. 包含了一个 <em>强调</em> 元素.</p>
-
+    <p class="special" >这是第二段,但换了个样式 包含了一个 <em>强调</em> 元素.</p>    
+    <!-- 看起来使用类名设置样式优先级更高 -->
+    <h3>接下来练习根据元素在文档中的位置确定样式</h3>
+    <p>下面的句子都将出现被标签框住的斜体强调元素：<em>测试</em></p>
+    <p>这是 一条 <em>测试</em></p>
     <ul>
-        <li>项目1</li>
-        <li>项目2</li>
-        <li>项目 <em>三</em></li>
+        <li>这是<span>span测试</span>一条<em>测试</em></li>
     </ul>
+
 
 </body>
 
