@@ -26,4 +26,17 @@ ul span{
     color: rgb(20, 43, 255);
 }
 
+a:link{
+    color: gold;
+}
+a:visited{
+    color: indigo;
+}
+/* 上面两种样式分别表示访问前后的链接颜色，下方的样式表示悬停在链接上时，下划线消失 */
+a:hover{
+    text-decoration: none;    
+    color: #000;
+}
+
+
 
