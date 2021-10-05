@@ -38,5 +38,32 @@ a:hover{
     color: #000;
 }
 
+/* 接下来的部分控制进度条 */
+/* 这是边框 */
+.outer {
+    border: 5px solid black;
+    /* width: 100%; */
+  }
+  
+/* 这是进度条部分 */
+.box {
+    padding: 5px;
+    /* 内边距 */
+    width: calc(90% - 0px);
+    /* 框的宽度为包含块宽度的90%，减去30像素 */
+    /* 但是发现设置为100时，将超出框的大小，那么框的宽度如果不加100%的设置的话，为什么默认时不满呢 */
+    background-color: rebeccapurple;
+    /* 背景颜色为紫色，字体为白色 */
+    color: white;
+}
 
-
+/* 接下来的部分是一个倾斜的方块 */
+.box1 {
+    /* 设置边框宽度 */
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    /* rotate函数定义 2D 旋转，在参数中规定角度 */
+    transform: rotate(0.8turn)
+  }
