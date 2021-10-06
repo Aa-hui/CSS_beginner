@@ -67,3 +67,27 @@ a:hover{
     /* rotate函数定义 2D 旋转，在参数中规定角度 */
     transform: rotate(0.8turn)
   }
+
+
+
+/* 这里练习@rules常见的应用：@media */
+body {
+    background-color: pink;
+}
+/* 当宽度大于30em的时候为绿色，否则为粉色 */
+@media (min-width: 30em) {
+    body {
+     background-color:cadetblue;
+    }
+}
+
+/* 同样，仿照上述代码的练习为： */
+/* 当宽度大于30em的时候为绿色，否则为粉色 */
+  /* @media (max-width: 30em) {
+    body {
+      background-color:cadetblue;
+    }
+  } */
+
+
+  
