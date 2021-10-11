@@ -232,5 +232,26 @@ p {
   
   ```
 
-  
+
+
+
+
+
+
+# CSS构建基础
+
+## 层叠与继承
+
+- CSS规则的顺序：当应用两条同级别的的规则到同一元素的时候，写在后面的元素是实际应用到的规则。
+- 规则越具体，优先级越高，例如为某元素定义了类名，那么真对类名的规则的优先级将高于针对这个元素的规则的优先级
+- widths , margins, padding, 和 borders 不会被继承，哪些属性属于默认继承很大程度上是由常识决定的。
+
+### 控制继承
+
+CSS 为控制继承提供了四个特殊的通用属性值。每个css属性都接收这些值
+
+- `inherit`  设置该属性会使子元素属性和父元素相同。实际上，就是 "开启继承"
+- `initial`设置属性值和浏览器默认样式相同。如果浏览器默认样式中未设置且该属性是自然继承的，那么会设置为 `inherit` 。
+- `unset`如果CSS关键字 **`unset`** 从其父级继承，则将该属性重新设置为继承的值，如果没有继承父级样式，则将该属性重新设置为初始值。换句话说，在第一种情况下（继承属性）它的行为类似于`inherit`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/inherit) ，在第二种情况下（非继承属性）类似于[`initial`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/initial)。它可以应用于任何CSS属性，包括CSS简写属性 [`all`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/all) 。
+- `revert`很少的浏览器支持
 
