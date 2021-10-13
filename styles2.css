@@ -1,6 +1,6 @@
-body {
+/* body {
     color: green;
-}
+} */
           
 .my-class-1 a {
     color: inherit;
@@ -133,3 +133,16 @@ span {
 
 
 /* ******************************************************* */
+
+/* p::first-line{
+    color: crimson;
+} */
+
+
+/* 测试一下伪类和伪类元素 */
+article p:first-child::first-line {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+
