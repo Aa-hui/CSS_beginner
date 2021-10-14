@@ -387,3 +387,45 @@ article p:first-child::first-line {
 article > p { }
 ```
 
+
+
+### 对同一个元素应用多个类
+
+通过下述例子来解释
+
+```html
+<div class="notebox">
+    This is an informational note.
+</div>
+
+<div class="notebox warning">
+    This note shows a warning.
+</div>
+
+<div class="notebox danger">
+    This note shows danger!
+</div>
+
+<div class="danger">
+    This won't get styled — it also needs to have the notebox class
+</div>
+    
+```
+
+```css
+.notebox {
+  border: 4px solid #666;
+  padding: .5em;
+}
+
+.notebox.warning {
+  border-color: orange;
+  font-weight: bold;
+}
+
+.notebox.danger {
+  border-color: red;
+  font-weight: bold;
+}
+```
+
