@@ -429,3 +429,6 @@ article > p { }
 }
 ```
 
+插眼 [看到了这部分内容](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors)
+
+要忙一些其他地方的事，暂时中断学习，加油！
