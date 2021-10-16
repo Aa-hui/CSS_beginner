@@ -419,8 +419,7 @@ article > p { }
 }
 
 .notebox.warning {
-  border-color: orange;
-  font-weight: bold;
+  font-weight: bold 
 }
 
 .notebox.danger {
@@ -429,6 +428,13 @@ article > p { }
 }
 ```
 
-插眼 [看到了这部分内容](https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors)
+这部分内容最开始有点问题的原因是，忽视了类的命名不能存在空格，存在空格的，表示是两个类。
 
-要忙一些其他地方的事，暂时中断学习，加油！
+这就是本模块的标题“同一个元素应用多个类”的由来
+
+可以用形如`.notebox.danger`的多个选择器连续放置，来定义多个类。
+
+
+
+
+
