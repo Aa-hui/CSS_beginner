@@ -50,7 +50,7 @@ a:hover{
 .box {
     padding: 5px;
     /* 内边距 */
-    width: calc(90% - 0px);
+    width: calc(90% - 30px);
     /* 框的宽度为包含块宽度的90%，减去30像素 */
     /* 但是发现设置为100时，将超出框的大小，那么框的宽度如果不加100%的设置的话，为什么默认时不满呢 */
     background-color: rebeccapurple;
@@ -66,7 +66,10 @@ a:hover{
     height: 100px;
     background-color: rebeccapurple;
     /* rotate函数定义 2D 旋转，在参数中规定角度 */
-    transform: rotate(0.8turn)
+    transform: rotate(0.2turn)
+    /* rotate 后跟的参数表示角度
+      常见的有以下几类：deg度，grad梯度，rad弧度，turn圈
+    */
   }
 
 

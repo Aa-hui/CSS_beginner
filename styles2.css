@@ -1,6 +1,6 @@
-/* body {
+body {
     color: green;
-} */
+}
           
 .my-class-1 a {
     color: inherit;
@@ -13,6 +13,7 @@
 .my-class-3 a {
     color: unset;
 }
+    
     
 blockquote {
     background-color: red;

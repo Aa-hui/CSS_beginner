@@ -18,6 +18,7 @@
         <li class="my-class-2">Reset the <a href="#">link</a> color</li>
         <li class="my-class-3">Unset the <a href="#">link</a> color</li>
     </ul>
+        
     
     <br>
     <p>测试CSS的简写属性all，可以同时设置几乎所有属性</p>
@@ -56,6 +57,17 @@
         <p>这行会不会被加粗呢<br>
             这里加个第二行</p>
     </article>
+    <!-- 
+    本部分内容对应的css代码为
+        article p:first-child::first-line {
+        font-size: 120%;
+        font-weight: bold;
+        }
+        指代的是，作为article中的p元素，如果他是第一子元素（这里找状态），选中它的第一行
+
+     -->
+
+
 
 
 
