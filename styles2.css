@@ -1,7 +1,7 @@
-body {
+/* body {
     color: green;
 }
-          
+           */
 .my-class-1 a {
     color: inherit;
 }
@@ -146,4 +146,23 @@ article p:first-child::first-line {
     font-weight: bold;
 }
 
+/* 使用::before插入文字 */
+ 
+.box11::after{
+    content: "这是被插入之后的部分。";
+}
+
+/* .box11::before {
+    content: "这是被插入之前的句子。"
+}   */
+
+.box11::before {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: rebeccapurple;
+    border: 1px solid black;
+}   
+/* TODO:此处解释为自己理解，需要后续验证，查看RWADME.md进行后续学习 */
 
