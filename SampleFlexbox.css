@@ -1,0 +1,96 @@
+html {
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    background: purple;
+    height: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+    flex: 200px;
+  }
+
+  /* 
+  弹性盒子练习
+  界面中有三段文段，在不添加下述代码的时候，展示情况为按列排布的三段内容，且格式并不统一
+  这三部分文段是article，我们希望他们可以弹性排布，因此，对父元素section设置display
+  设置完成后，将展示为按行排布的三部分内容
+  */
+  /* section{
+      display: flex;
+      
+  } */
+  /* 
+  主轴的方向默认是行row
+  但是可以通过flex-direction: column 更换为按列排布
+  */
+
+
+  /* 
+  练习2.0
+  在新的2.0练习中，出现了一种情况：弹性盒子子元素溢出
+  可以通过添加flex-wape属性，必要情况下进行拆分
+  但是如果仅添加该属性，会导致即使是只有一行也会拆分，并不能达成需求
+  可以通过在子元素中添加一个flex属性来解决（即作为section子元素的article元素）
+    flex: 200px;
+  这个属性表示，限制每个弹性盒子子元素的最小宽度
+  
+  */
+  section{
+    display: flex;
+    flex-direction: row;
+    /* 反向排序 */
+    flex-wrap: wrap;
+   
+}
+
+/* 
+  合并写法
+  存在着 flex-direction 和 flex-wrap — 的缩写 flex-flow
+  上述的代码可以改写为
+  flex-flow : row-reverse wrap
+*/
+
+/* 
+  设置flex的尺寸
+  若写作：
+  article {
+    flex: 1 ;
+  }
+  表示每个article大小相同，即各自的比例为1
+  若写作：
+    article {
+        flex: 1 200px;
+    }
+    
+    article:nth-of-type(3) {
+        flex: 2 200px;
+    }
+    表示第三个子元素所占大小的比例是2，其他的是1
+    而形如最下面的这种写法
+    是限制了每个元素的最小大小
+    每个flex 项将首先给出200px的可用空间，然后，剩余的可用空间将根据分配的比例共享
+    因此最后的比例大小并不会为简单的数值大小
+*/
+article {
+    flex: 1 200px;
+}
+  
+article:nth-of-type(3) {
+    flex: 2 200px;
+}
